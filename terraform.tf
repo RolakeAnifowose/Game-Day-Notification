@@ -5,10 +5,3 @@ terraform {
       region = "us-east-1"
     }
 }
-
-# resource "aws_dynamodb_table" "terraform-state-table" {
-#     name = "terraform-state-table"
-#     billing_mode = "PROVISIONED"
-#     write_capacity = 10
-#     read_capacity = 10
-# }
