@@ -3,6 +3,7 @@ terraform {
       bucket = "game-day-notification-morolake"
       key = "game-day-notification-morolake/terraform.tfstate"
       region = "us-east-1"
+      depends_on = [aws_s3_bucket.game-day-notification-morolake]
       #dynamodb_table = "terraform-state-table"
     }
 }
