@@ -24,12 +24,12 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.10.3
+      
+    - name: Initialise
+      run: terraform init
 
     - name: Destroy
       run: terraform destroy -auto-approve
-
-    - name: Initialise
-      run: terraform init
 
     - name: Validate
       run: terraform validate
