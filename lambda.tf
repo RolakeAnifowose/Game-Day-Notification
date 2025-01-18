@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "game-day-lambda" {
     function_name = "game-day-lambda"
     runtime = "python3.13"
-    role = aws_iam_role.game-day-lambda-role.arn
+    role = aws_iam_role.game-day-lambda-role-new.arn
     filename = "notifications.zip"
     handler = "notifications.lambda_handler"
 

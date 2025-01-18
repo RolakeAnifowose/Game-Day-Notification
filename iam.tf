@@ -15,8 +15,8 @@ resource "aws_iam_policy" "game-day-iam-policy" {
     })
 }
 
-resource "aws_iam_role" "game-day-lambda-role" {
-    name = "game-day-lambda-role"
+resource "aws_iam_role" "game-day-lambda-role-new" {
+    name = "game-day-lambda-role-new"
     managed_policy_arns = [aws_iam_policy.game-day-iam-policy.arn, "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"]
 
     assume_role_policy = jsonencode({
