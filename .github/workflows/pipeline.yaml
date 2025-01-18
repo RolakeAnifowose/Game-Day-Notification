@@ -31,11 +31,11 @@ jobs:
     - name: Destroy
       run: terraform destroy -auto-approve
 
-    - name: Validate
-      run: terraform validate
+    # - name: Validate
+    #   run: terraform validate
 
-    - name: Plan
-      run: terraform plan
+    # - name: Plan
+    #   run: terraform plan
 
-    - name: Apply
-      run: terraform apply -auto-approve
+    # - name: Apply
+    #   run: terraform apply -auto-approve
