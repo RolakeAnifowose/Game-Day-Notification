@@ -7,8 +7,8 @@ resource "aws_lambda_function" "game-day-lambda" {
 
     environment {
         variables = {
-            NBA_API_KEY = "7a56c2fc2b78462e840b340a20869600"
-            SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:556298987240:game-day-notification"
+            NBA_API_KEY = "api_key"
+            SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:<account-id>:game-day-notification"
         }
     }
 }

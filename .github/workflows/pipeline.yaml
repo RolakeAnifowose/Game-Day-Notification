@@ -28,11 +28,14 @@ jobs:
     - name: Initialise
       run: terraform init
 
-    - name: Validate
-      run: terraform validate
+    - name: Destroy
+      run: terraform destroy -auto-approve
 
-    - name: Plan
-      run: terraform plan
+    # - name: Validate
+    #   run: terraform validate
 
-    - name: Apply
-      run: terraform apply -auto-approve
+    # - name: Plan
+    #   run: terraform plan
+
+    # - name: Apply
+    #   run: terraform apply -auto-approve

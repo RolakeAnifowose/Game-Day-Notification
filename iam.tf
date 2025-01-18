@@ -9,7 +9,7 @@ resource "aws_iam_policy" "game-day-iam-policy" {
             {
                 "Effect": "Allow",
                 "Action": "sns:Publish",
-                "Resource": "arn:aws:sns:us-east-1:556298987240:game-day-notification"
+                "Resource": "arn:aws:sns:us-east-1:<account-id>:game-day-notification"
             }
         ]
     })
