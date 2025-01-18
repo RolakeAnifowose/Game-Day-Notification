@@ -1,4 +1,3 @@
-resource "aws_lambda_function" "game-day-lambda" {
-    function_name = "game-day-lambda"
-}
-
+# resource "aws_lambda_function" "game-day-lambda" {
+#     function_name = "game-day-lambda"
+# }
