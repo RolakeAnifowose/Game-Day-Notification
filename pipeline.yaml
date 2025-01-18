@@ -1,0 +1,31 @@
+name: Terraform CI/CD for Game Day Notification
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Setup
+      uses: hashicorp/setup-terraform@v1
+      with:
+        terraform_version: 1.10.3
+
+    - name: Initialise
+      run: terraform init
+
+    - name: Validate
+      run: terraform validate
+
+    - name: Plan
+      run: terraform plan
+
+    - name: Apply
+      run: terraform apply -auto-approve
