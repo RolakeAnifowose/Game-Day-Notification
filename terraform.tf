@@ -1,10 +1,10 @@
-terraform {
-    backend "s3" {
-      bucket = "game-day-notification-morolake"
-      key = "game-day-notification-morolake/terraform.tfstate"
-      region = "us-east-1"
-    }
-}
+# terraform {
+#     backend "s3" {
+#       bucket = "game-day-notification-morolake"
+#       key = "game-day-notification-morolake/terraform.tfstate"
+#       region = "us-east-1"
+#     }
+# }
 
 # resource "aws_dynamodb_table" "terraform-state-table" {
 #     name = "terraform-state-table"
